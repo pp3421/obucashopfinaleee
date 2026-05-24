@@ -1,0 +1,26 @@
+:root {
+  --sand: #fdf8f0;
+  --cream: #f8f0e0;
+  --beige1: #f0e4cc;
+  --beige2: #e4d0b0;
+  --tan: #b89a6a;
+  --brown1: #8c6a3e;
+  --brown2: #5c4022;
+  --espresso: #2e1a0a;
+  --gold: #c8924a;
+  --gold2: #dfa85a;
+  --sale: #b84040;
+  --text-dark: #2e1a0a;
+  --text-mid: #5c4022;
+  --text-soft: #8c6a3e;
+  --r-pill: 999px;
+  --r-card: 18px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-outfit, sans-serif);
+  background: var(--sand);
+  color: var(--text-dark);
+}
