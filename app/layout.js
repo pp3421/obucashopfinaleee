@@ -1,4 +1,5 @@
 import { Outfit, Playfair_Display, Cormorant_Garamond } from 'next/font/google'
+import './globals.css'
 
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit', weight: ['300','400','500','600','700','800'] })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', weight: ['400','700','900'], style: ['normal','italic'] })
