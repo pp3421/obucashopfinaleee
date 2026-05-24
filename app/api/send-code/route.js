@@ -44,7 +44,7 @@ export async function POST(request) {
 
     // Pošalji email
     await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'Obuća Shop <noreply@obucashop.com>',
+      from: 'Obuća Shop <onboarding@resend.dev>',
       to: email,
       subject: 'Vaš admin login kod — Obuća Shop',
       html: `
