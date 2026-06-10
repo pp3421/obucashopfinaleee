@@ -161,6 +161,7 @@ export default function Home() {
   async function verifyCode() {
     const code = codeInputs.join('')
     if(code.length < 4) return
+    if(loginLoading) return
     setLoginLoading(true); setLoginError('')
     const res = await fetch('/api/verify-code', {
       method:'POST', headers:{'Content-Type':'application/json'},
