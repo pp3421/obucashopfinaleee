@@ -44,9 +44,13 @@ export async function POST(request) {
 
     console.log('Upsert error:', upsertError)
 
+    if (upsertError) {
+      return Response.json({ error: 'Greška pri spremanju koda. Pokušajte ponovo.' }, { status: 500 })
+    }
+
     await resend.emails.send({
       from: 'Obuća Shop <onboarding@resend.dev>',
-      to: email,
+      to: 'programiranje803@gmail.com',
       subject: 'Vaš admin login kod — Obuća Shop',
       html: `
         <div style="font-family: Georgia, serif; max-width: 480px; margin: 0 auto; padding: 40px 24px; background: #fdf8f0;">
